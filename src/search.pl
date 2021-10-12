@@ -19,8 +19,7 @@ input :-
   read(StartCity),
   delayedPrint("Enter the name of end city:", 0.03), nl,
   read(EndCity),
-  %  dfs(StartCity, EndCity, Path, Result),
-  best_first(StartCity, EndCity, [], Path, Result),
+  (Choice =:= 2 -> dfs(StartCity, EndCity, Path, Result); best_first(StartCity, EndCity, [], Path, Result)),
   write_list(Path),
   delayedPrint(Result, 0.03).
 
