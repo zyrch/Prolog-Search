@@ -7,7 +7,6 @@ input :-
   
   clear,
   loading(5),
-  
   remove_prev,
 
   delayedPrint("Choose search method:", 0.03), nl,
@@ -69,8 +68,6 @@ write_list([A|T]) :-
   delayedPrint(A, 0.03), delayedPrint(' ', 0.03),
     write_list(T).
 
-  
-  
 
 %================================ UTILS ====================================== %
 
